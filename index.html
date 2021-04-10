@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cake World</title>
 </head>
 <body>
-    
+    <div class="cake-container">
+        <div class="header-part">
+            <div class="logo">
+                <img src="./assets/cake.png" alt="">
+                <h3>Cake World</h3>
+            </div>
+        </div>
+        <div class="actual-body">
+            <div class="prices">
+                <table>
+                    <caption>Prices</caption>
+                    <tr>
+                        <td>chocolates---300</td>
+                    </tr>
+                    <tr>
+                        <td>Strawberry---100</td>
+                    </tr>
+                    <tr>
+                        <td>Butterscotch-200</td>
+                    </tr>
+                    <tr>
+                        <td>Vannila------250</td>
+                    </tr>
+                    <tr>
+                        <td>Redvelvet----350</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cake">
+                <div id="candles">
+                    <img src="./assets/candle.png" alt="candles">
+                </div>
+                <div id="layer5"></div>
+                <div id="layer4"></div>
+                <div id="layer3"></div>
+                <div id="layer2"></div>
+                <div id="layer1"></div>
+            </div>
+            <div class="bill">
+                <table>
+                    <caption>Bill</caption>
+                    <tr>
+                        <td id="item-1-cost"></td>
+                    </tr>
+                    <tr>
+                        <td id="item-2-cost"></td>
+                    </tr>
+                    <tr>
+                        <td id="item-3-cost"></td>
+                    </tr>
+                    <tr>
+                        <td id="item-4-cost"></td>
+                    </tr>
+                    <tr>
+                        <td id="item-5-cost"></td>
+                    </tr>
+                    <tr align="center">
+                        <td id="total-cost"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer-part">
+            <button onclick="addCake('Chocolate')">Chocolate</button>
+            <button onclick="addCake('Strawberry')">Strawberry</button>
+            <button onclick="addCake('Butterscotch')">Butterscotch</button>
+            <button onclick="addCake('Vannila')">Vannila</button>
+            <button onclick="addCake('Redvelvet')">Redvelevt</button>
+            <button onclick="buy()" class="buy">Buy</button>
+            <button onclick="clearItems()" class="clear-button">Clear</button>
+        </div>
+    </div>
 </body>
 <script src="/script.js"></script>
 </html>
